@@ -1,0 +1,186 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2022/10/24/09/54/switzerland-7543063_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1; 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#title{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#weather-search {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+#city-name-input {
+    margin-top: 20px;
+}
+
+button {
+    margin: 0px 50px;
+}
+
+#current-weather-btn {
+    margin-top: 20px;
+}
+
+#forecast-weather-btn {
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#forecast-weather-btn:hover {
+    margin-top: 10px;
+    background-color: #ffc107;
+}
+
+/*Result*/
+#weather-result {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#city-info {
+    margin-bottom: 20px;
+}
+
+#city-name-forecast {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-color: white;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 700px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+/*Today Result*/
+
+#temperature-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+#weather-description{
+    margin: 0px;
+}
+
+#feels-like {
+    margin: 0px;
+}
+
+#weather-description h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#temperature {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#extra-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    gap: 30px;
+}
+
+/* Forecast */
+
+#weather-info-forecast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-color: white;
+    border: 2px solid;
+    border-radius: 15px;
+    width: 220px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+#weather-info-forecast #temperature {
+    font-size: 30px;
+}
+
+#weather-info-forecast #weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#weather-day {
+    background-color: rgba(153, 149, 149, 0.704);
+    padding: 2px 5px;
+    border-radius: 15px;
+    margin-top: 5px;
+}
